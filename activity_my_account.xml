@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/chatboardback"
+    tools:context="com.org.arkp.admissionguidance.MyAccountActivity">
+
+
+
+    <TextView
+        android:id="@+id/myText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:drawableLeft="@drawable/ic_confirm_icon"
+        android:text="Want more Help? (Update your credentials!)"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:gravity="left"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="30dp"
+        />
+
+    <Button
+        android:id="@+id/buttonupdateEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_style"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:text="Update Email ?" />
+
+    <Button
+        android:id="@+id/buttonupdatePassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="185dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/button_style"
+        android:textColor="#ffffff"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="52dp"
+        android:text="Update Password ?" />
+</RelativeLayout>

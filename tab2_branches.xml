@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/HomeFragment"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card="http://schemas.android.com/apk/res-auto">
+
+
+    <com.github.ksoichiro.android.observablescrollview.ObservableScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:background="#2b4e47"
+        android:layout_weight="1.0">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="0.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_margin="5.0dip"
+            android:layout_weight="1.0">
+
+            <!-- Mechanical Engg-->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="90.0dip">
+
+                <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:onClick="onME2"
+                    android:layout_marginTop="5dp">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Mechanical Engineering"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:paddingLeft="40dp"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="left|center"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_mechengg" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_rightbuttton"
+                        android:layout_gravity="right|center"
+                        />
+
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+
+            <!-- Computer Engg-->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="90.0dip">
+
+                <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:onClick="onCO2"
+                    android:layout_marginTop="5dp">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Computer Engineering"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:paddingLeft="40dp"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="left|center"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_compuengg" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_rightbuttton"
+                        android:layout_gravity="right|center"
+                        />
+
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+
+            <!-- Civil Engg-->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="90.0dip">
+
+                <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:onClick="onCI2"
+                    android:layout_marginTop="5dp">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Civil Engineering"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:paddingLeft="40dp"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="left|center"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_civilengg" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_rightbuttton"
+                        android:layout_gravity="right|center"
+                        />
+
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+
+            <!-- Humanity Science-->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="90.0dip"
+                android:layout_marginBottom="50dp">
+
+                <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:onClick="onHS2"
+                    android:layout_marginTop="5dp">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Humanity &amp; Science"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:paddingLeft="40dp"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="left|center"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_humanityscience" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_rightbuttton"
+                        android:layout_gravity="right|center"
+                        />
+
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </com.github.ksoichiro.android.observablescrollview.ObservableScrollView>
+
+
+</LinearLayout>

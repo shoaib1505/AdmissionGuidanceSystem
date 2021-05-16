@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/HomeFragment"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card="http://schemas.android.com/apk/res-auto">
+
+
+    <!--flash News-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="20dp"
+        android:layout_marginTop="55dp"
+        android:background="@color/colorback"
+        android:layout_height="75dp">
+        <TextView
+            android:layout_width="50dp"
+            android:text="News:"
+            android:gravity="center"
+            android:textSize="15dp"
+            android:inputType="none"
+            android:textStyle="bold"
+            android:layout_height="30dp"
+            />
+        <TextView
+            android:text="Welcome to Admission guidance App ARKP News Flash!!!!!!"
+            android:singleLine="true"
+            android:gravity="left"
+            android:textColor="#ffffff"
+            android:ellipsize="marquee"
+            android:textSize="15dp"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:id="@+id/News"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:background="#2b4e47"
+        android:layout_weight="1.0">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="0.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_margin="5.0dip"
+            android:layout_weight="1.0">
+
+            <!-- Predictor & college info-->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="150.0dip">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="350.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="3.0dip"
+                    android:layout_weight="1"
+                    card:cardBackgroundColor="@color/colorPrimaryDark"
+                    card:cardCornerRadius="5dp"
+                    card:cardElevation="2.0dip">
+
+                    <Button
+                        android:padding="5dp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:text="Predictor"
+                        android:id="@+id/predict"
+                        android:onClick="gotopredict"
+                        android:textColor="#000000"
+                        android:backgroundTint="#ffffff"
+                        android:drawableTop="@drawable/ic_predictor"
+                        style="@style/homeButton" />
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="350.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="3.0dip"
+                    android:layout_weight="1"
+                    card:cardBackgroundColor="@color/colorPrimaryDark"
+                    card:cardCornerRadius="5dp"
+                    card:cardElevation="2.0dip">
+
+                    <Button
+                        android:padding="5dp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:text="College Info"
+                        android:onClick="oncollegeinfo"
+                        android:textColor="#000000"
+                        android:backgroundTint="#ffffff"
+                        android:drawableTop="@drawable/ic_info"
+                        style="@style/homeButton" />
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+            <!-- cutoff & admission steps-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150.0dip"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="350.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="3.0dip"
+                    android:layout_weight="1"
+                    card:cardBackgroundColor="@color/colorPrimaryDark"
+                    card:cardCornerRadius="5dp"
+                    card:cardElevation="2.0dip">
+
+                    <Button
+                        style="@style/homeButton"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:backgroundTint="#ffffff"
+                        android:drawableTop="@drawable/ic_cutoff"
+                        android:padding="5dp"
+                        android:text="Cutoff"
+                        android:onClick="oncutoff"
+                        android:textColor="#000000" />
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="350.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="3.0dip"
+                    android:layout_weight="1"
+                    card:cardBackgroundColor="@color/colorPrimaryDark"
+                    card:cardCornerRadius="5dp"
+                    card:cardElevation="2.0dip">
+
+                    <Button
+                        style="@style/homeButton"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:backgroundTint="#ffffff"
+                        android:drawableTop="@drawable/ic_steps"
+                        android:padding="5dp"
+                        android:onClick="onAdmissionSteps"
+                        android:text="Admission Steps"
+                        android:textColor="#000000" />
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+            <!-- Keydates & Branches-->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="150.0dip">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="350.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="3.0dip"
+                    android:layout_weight="1"
+                    card:cardBackgroundColor="@color/colorPrimaryDark"
+                    card:cardCornerRadius="5dp"
+                    card:cardElevation="2.0dip">
+
+                    <Button
+                        android:padding="5dp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:text="Key Dates"
+                        android:textColor="#000000"
+                        android:backgroundTint="#ffffff"
+                        android:onClick="onKeyDates"
+                        android:drawableTop="@drawable/ic_keydates"
+                        style="@style/homeButton" />
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="350.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="3.0dip"
+                    android:layout_weight="1"
+                    card:cardBackgroundColor="@color/colorPrimaryDark"
+                    card:cardCornerRadius="5dp"
+                    card:cardElevation="2.0dip">
+
+                    <Button
+                        android:padding="5dp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:text="Branches"
+                        android:onClick="onBranches"
+                        android:textColor="#000000"
+                        android:backgroundTint="#ffffff"
+                        android:drawableTop="@drawable/ic_branches"
+                        style="@style/homeButton" />
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+            <!-- College Location & Scholarship-->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="150.0dip">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="350.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="3.0dip"
+                    android:layout_weight="1"
+                    card:cardBackgroundColor="@color/colorPrimaryDark"
+                    card:cardCornerRadius="5dp"
+                    card:cardElevation="2.0dip">
+
+                    <Button
+                        android:padding="5dp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:textColor="#000000"
+                        android:backgroundTint="#ffffff"
+                        android:text="College Location"
+                        android:onClick="onCL"
+                        android:drawableTop="@drawable/ic_maps"
+                        style="@style/homeButton" />
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="350.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="3.0dip"
+                    android:layout_weight="1"
+                    card:cardBackgroundColor="@color/colorPrimaryDark"
+                    card:cardCornerRadius="5dp"
+                    card:cardElevation="2.0dip">
+
+                    <Button
+                        android:padding="5dp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:text="Scholarship"
+                        android:onClick="onScholarship"
+                        android:textColor="#000000"
+                        android:backgroundTint="#ffffff"
+                        android:drawableTop="@drawable/ic_scholarship"
+                        style="@style/homeButton" />
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+            <!-- Livechat & Website-->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="150.0dip">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="350.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="3.0dip"
+                    android:layout_weight="1"
+                    card:cardBackgroundColor="@color/colorPrimaryDark"
+                    card:cardCornerRadius="5dp"
+                    card:cardElevation="2.0dip">
+
+                    <Button
+                        android:padding="5dp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:textColor="#000000"
+                        android:onClick="onLC"
+                        android:backgroundTint="#ffffff"
+                        android:text="Live Chat"
+                        android:drawableTop="@drawable/ic_livechat"
+                        style="@style/homeButton" />
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="350.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="3.0dip"
+                    android:layout_weight="1"
+                    card:cardCornerRadius="5dp"
+                    card:cardElevation="2.0dip"
+                    card:cardBackgroundColor="@color/colorPrimaryDark">
+
+                    <Button
+                        android:padding="5dp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:textColor="#000000"
+                        android:backgroundTint="#ffffff"
+                        android:text="Websites"
+                        android:onClick="onWebsite"
+                        android:drawableTop="@drawable/ic_web"
+                        style="@style/homeButton" />
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

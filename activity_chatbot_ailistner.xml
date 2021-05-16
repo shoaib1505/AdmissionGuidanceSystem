@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/chatboardback"
+    android:orientation="vertical" >
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="225dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageButton
+            android:id="@+id/btnSpeak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/ico_mic" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/tap_on_mic"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:textStyle="normal" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:layout_marginTop="225dp"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:drawableLeft="@drawable/ic_user_icon"
+                android:gravity="center"
+                android:text="You"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/txtSpeechInput"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:padding="20dp"
+                android:textColor="@color/white"
+                android:textSize="26dp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_bot"
+                android:gravity="center"
+                android:text="JawsBot"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/outputTex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:padding="20dp"
+                android:textColor="@color/white"
+                android:textSize="26dp"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+</ScrollView>
+
+</RelativeLayout>

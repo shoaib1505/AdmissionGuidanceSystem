@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:background="@drawable/my_bg_anim"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.org.arkp.admissionguidance.LoginActivity">
+
+    <ImageView
+        android:layout_width="360dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="8dp"
+        android:id="@+id/formLogo"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ico_logo"
+        android:scaleType="centerCrop" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:layout_below="@id/formLogo"
+        android:id="@+id/scrollView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:paddingBottom="5dp"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:background="@drawable/trans_white_rectangle"
+            android:weightSum="1">
+
+
+            <TextView
+                android:id="@+id/myText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="Welcome To Admission Guidance"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:gravity="center"
+                android:paddingTop="15dp"
+                android:layout_marginBottom="30dp"
+                />
+
+            <AutoCompleteTextView
+                android:layout_width="260dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:hint="Email"
+                android:background="@drawable/rounded_white"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:drawableLeft="@drawable/ic_user_icon"
+                android:textSize="14sp"
+                android:drawablePadding="5dp"
+                android:layout_marginTop="-14dp"
+                android:paddingLeft="10dp"
+                android:inputType="textEmailAddress"
+                android:id="@+id/userEmail"
+                android:layout_marginBottom="10dp"
+                />
+
+            <AutoCompleteTextView
+                android:layout_width="260dp"
+                android:layout_height="50dp"
+                android:hint="Password"
+                android:layout_gravity="center"
+                android:background="@drawable/rounded_white"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:drawableLeft="@drawable/ic_pass_icon"
+                android:textSize="14sp"
+                android:drawablePadding="5dp"
+                android:paddingLeft="10dp"
+                android:inputType="textPassword"
+                android:id="@+id/userPassword"
+                android:layout_marginBottom="10dp"
+
+                />
+
+            <Button
+                android:id="@+id/login"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:textColor="#ffffff"
+                android:text="Login"
+                android:textStyle="normal"
+                android:background="@drawable/button_style"
+                android:layout_gravity="center"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:onClick="onHome"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="15dp"
+                tools:ignore="OnClick" />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="1"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:text="Forgot your Login details?"
+                    android:textSize="12dp"
+                    android:textColor="#282626"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="18dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView7"
+                    />
+
+                <Button
+                    android:text="Get help in Singing In."
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorback"
+                    android:textAllCaps="false"
+                    android:layout_width="wrap_content"
+                    android:background="@null"
+                    android:layout_marginLeft="0.5dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/btnforgetpassword"
+                    android:layout_weight="0.23" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center">
+
+        <TextView
+            android:text="Don't have an Account?"
+            android:textSize="12dp"
+            android:paddingRight="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp" />
+
+        <Button
+            android:text="Sign Up"
+            android:onClick="onRegister"
+            android:gravity="left"
+            android:textSize="12dp"
+            android:paddingLeft="110dp"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:textColor="@color/colorback"
+            android:textAllCaps="false"
+            android:layout_width="wrap_content"
+            android:background="@null"
+            android:layout_height="20dp"
+            android:id="@+id/btnsignup" />
+
+    </RelativeLayout>
+</RelativeLayout>
